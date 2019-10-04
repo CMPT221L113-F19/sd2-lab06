@@ -8,7 +8,7 @@ routes = require("./routes.js");
 app.use(parser.urlencoded({ extended: true }));
 app.use(parser.json());
 app.use("/api", routes);
-routes.initialize(app);
+//routes.initialize(app);
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 

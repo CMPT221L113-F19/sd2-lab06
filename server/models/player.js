@@ -13,14 +13,12 @@ function Player(name) {
   // include other attributes here
 }
 
-exports = {
-  Player: Player,
-  players: {
-    "Alice": new Player("Alice"),
-    "Bob":   new Player("Bob"),
-    "Carol": new Player("Carol")
-  }
-}
+exports.Player = Player;
+exports.players = {
+  "Alice": new Player("Alice"),
+  "Bob":   new Player("Bob"),
+  "Carol": new Player("Carol")
+};
 
 // players["Alice"]
 // players["Dave"] = new Player("Dave")

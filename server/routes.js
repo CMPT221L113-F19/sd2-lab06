@@ -13,3 +13,5 @@ router.route("/players/:name")
   .get(playerCtlr.readPlayer)
   .patch(playerCtlr.updatePlayer)
   .delete(playerCtlr.deletePlayer);
+
+module.exports = router; // needed in order to make sure that app.js can load the router object
